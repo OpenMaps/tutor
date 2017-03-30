@@ -1,14 +1,8 @@
 //map initialization
-var map = new L.Map('map', { 
-center: new L.LatLng(-1.2641,36.7494),
-zoom: 13,
-minZoom: 12,
-maxZoom: 16
-});
-
 /*
-var map = new L.Map('map',{scrollWheelZoom:false}).setView([-1.2641,36.7494], 13);
+var map = new L.Map('map', { center: new L.LatLng(-1.2641,36.7494),zoom: 13,minZoom: 12,maxZoom: 16});
 */
+var map = new L.Map('map',{scrollWheelZoom:false}).setView([-1.2641,36.7494], 13);
  
 //TMS layer
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -24,21 +18,20 @@ popupAnchor: [0,-15]
 });
 
 //Add interaction: popup 
-
+/*
 var marker = L.marker([-1.2641,36.7494], {icon: MyIcon}).addTo(map);
 
-/*
+
 L.marker([-1.2641,36.7494], {icon: MyIcon}).bindPopup('Nairobi').addTo(map);
 */
 //Custom popup
-/*
+
 var customPopup = "Nairobi<br/><img src='http://localhost/svg/dribble_gif.gif' alt='dribble_gif gif'width='350px'/>";
 var customOptions ={
     'maxWidth': '500',
     'className' : 'custom'
 }
 L.marker([-1.2641,36.7494], {icon: MyIcon}).bindPopup(customPopup,customOptions).addTo(map);
-*/
 
 
 /*
