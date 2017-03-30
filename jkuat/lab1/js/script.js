@@ -12,7 +12,7 @@ attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contri
 //Add custom icon
 
 var MyIcon = L.icon({
-iconUrl: 'http://localhost/svg/flame.svg',
+iconUrl: 'https://github.com/OpenMaps/tutor/blob/master/svg/flame.svg',
 iconSize: [20, 20], // size of the icon
 popupAnchor: [0,-15]
 });
@@ -20,13 +20,13 @@ popupAnchor: [0,-15]
 //Add interaction: popup 
 /*
 var marker = L.marker([-1.2641,36.7494], {icon: MyIcon}).addTo(map);
-
+https://github.com/OpenMaps/tutor/blob/master/svg/dribble_gif.gif
 
 L.marker([-1.2641,36.7494], {icon: MyIcon}).bindPopup('Nairobi').addTo(map);
 */
 //Custom popup
 
-var customPopup = "Nairobi<br/><img src='http://localhost/svg/dribble_gif.gif' alt='dribble_gif gif'width='350px'/>";
+var customPopup = "Nairobi<br/><img src='https://github.com/OpenMaps/tutor/blob/master/svg/dribble_gif.gif' alt='dribble_gif gif'width='350px'/>";
 var customOptions ={
     'maxWidth': '500',
     'className' : 'custom'
