@@ -58,7 +58,7 @@ html, body {
     	// Use Leaflet to parse the data and display it as a layer on the map:
 	L.geoJson(data, {
 	    onEachFeature: function (feature, layer) {
-	        layer.bindPopup(feature.properties.name);
+	        layer.bindPopup(feature.properties.Ccodes);
 	    }
 	}).addTo(map);
 
