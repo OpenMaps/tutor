@@ -141,7 +141,7 @@ map.on('locationerror', onLocationError);
 						<h4>index.html:</h4>
 						<p>Add this....</strong>.</p>
 						<pre><code class="hljs" data-trim contenteditable>
-<script src="data/coffee.js" type="text/javascript"></script>
+<script src="d/script.js" type="text/javascript"></script>
 					</code></pre>
 					</section>
 
@@ -149,9 +149,18 @@ map.on('locationerror', onLocationError);
 						<h4>Script.js:</h4>
 						<p>Add this ...</p></small>
 						<pre><code class="hljs" data-trim contenteditable>
-//Add coffeeShops GeoJSON
-var coffeeShops = L.geoJson(coffee, { style: function (feature) });
-coffeeShops.addTo(map);
+//Add schoolsPoints GeoJSON
+var schools = {
+"type": "FeatureCollection",
+"features": [{ "type": "Feature",
+"properties": { "name": "Chianina" },
+"geometry": { "type": "Point", "coordinates": [ -1.2641,36.7494 ] }
+},
+var schoolpoints = L.geoJson(schools, {
+	pointToLayer: function (feature, latlng) {
+	return L.marker(latlng, MyIcon);
+	}
+}).addTo(map);
 					</code></pre>
 						<a href="#/2">
 							<img width="48" height="68" data-src="https://openmaps.github.io/tutor/svg/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
