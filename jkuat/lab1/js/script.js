@@ -39,15 +39,17 @@ var schools = {
 "type": "FeatureCollection",
 "features": [{ "type": "Feature",
 "properties": { "name": "Chianina" },
-"geometry": { "type": "Point", "coordinates": [ 24.929369, 60.22817 ] }
+"geometry": { "type": "Point", "coordinates": [ -1.2641,36.7494 ] }
 },
 
 var schoolpoints = L.geoJson(schools, {
 	pointToLayer: function (feature, latlng) {
-	return L.marker(latlng, schoolsymbol);
+	return L.marker(latlng, MyIcon);
 	}
 }).addTo(map);
+*/
 
+/*
 function showCoords(e) {
 	popup
 		.setLatLng(e.latlng)
