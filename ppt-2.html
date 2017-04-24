@@ -40,7 +40,7 @@
 					<h1>Geolocation  &amp; Spatiotemporal visualization</h1>
 					<h3>Lab#2</h3>
 					<p>
-						<small>By <a href="http://www.openmaps.co.ke/">Mwaura Joshua</a> / <a href="https://twitter.com/@OpenMapsLtd">@OpenMaps</a></small>
+						<small>By <a href="http://www.openmaps.co.ke/">Mwaura Joshua</a> / <a href="https://twitter.com/@openmapsCo">@openmapsCo on Twitter</a></small>
 					</p>
 				</section>
 
@@ -103,8 +103,8 @@ map.locate({setView: true, maxZoom: 16});
 					<li>add a marker in the detected location, showing accuracy in a popup, by adding an event listener to locationfound event before the locate And SetView call:</li>
 					<pre><code class="hljs" data-trim contenteditable>
 function onLocationFound(e) {
-    var radius = e.accuracy / 2;L.marker(e.latlng).addTo(map)
-                .bindPopup("You are within " + radius + " meters from this point").openPopup();
+    var radius = e.accuracy / 2;
+    L.marker(e.latlng).addTo(map).bindPopup("You are within " + radius + " meters from this point").openPopup();
     L.circle(e.latlng, radius).addTo(map);
 }
 map.on('locationfound', onLocationFound);
