@@ -28,7 +28,7 @@ html, body {
         // location over which we will initially center the map
     var loc = {'lat': -1.28141, 'lon': 36.83111}, 
         // extent to which we are initially zoommed
-        zoomLevel = 3, 
+        zoomLevel = 10, 
         // the maximum level of detail a user is allowed to see
         maxZoom = 15, 
         // id of the element in which we will place the map
@@ -58,7 +58,7 @@ html, body {
     	// Use Leaflet to parse the data and display it as a layer on the map:
 	L.geoJson(data, {
 	    onEachFeature: function (feature, layer) {
-	        layer.bindPopup(feature.properties.name);
+	        layer.bindPopup(feature.properties.Ccodes);
 	    }
 	}).addTo(map);
 
