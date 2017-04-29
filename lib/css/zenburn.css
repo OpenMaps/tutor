@@ -10,8 +10,8 @@ based on dark.css by Ivan Sagalaev
   overflow-x: auto;
   padding: 0.5em;
   /*background: #f0f0f0;*/
-  background: #333333;
-  color: #ffffff;
+  background: #3f3f3f;
+  color: #dcdcdc;
 }
 
 .hljs-keyword,
