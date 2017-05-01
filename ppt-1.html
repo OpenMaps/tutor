@@ -64,10 +64,12 @@
 				
 				<section>
 					<h3>Your Cover..</h3>
-					<p>
-                                           <ul><li><a>law of large numbers,</a></li>also known as the law of averages
-                                                <li><a>APIs are your friend</a></li></ul>
-					</p>
+					   <ul>
+						   <li><a>law of large numbers,</a></li>
+						   also known as the law of averages
+							<li><a>APIs are your friend</a></li>
+						</ul>
+					
 					
 				</section>
 
@@ -125,13 +127,13 @@
 								<td>Openlayers</td>
 								<td>Yes</td>
 								<td>Yes</td>
-								<td>skills & time</td>
+								<td>skills &amp; time</td>
 							</tr>
 							<tr>
 								<td>Leaflet</td>
 								<td>Yes</td>
 								<td>Yes</td>
-								<td>skills & time</td>
+								<td>skills &amp; time</td>
 							</tr> 
 						</tbody>
 					</table>
@@ -165,7 +167,7 @@
 					<section>
 						<h3>2. ArcGIS Online</h3>
 						<p>Choose base maps.</p>
-						<p>Add your own data and styles.</p>
+						<p>Add your own data &amp; styles.</p>
 						<p>Publish/share your map as an application.</p>
 						<ol>
                                                     <li><a>Application templates available</a></li>
@@ -193,7 +195,7 @@
 					</section>
 					<section>
 						<h3>5. Leaflet</h3>
-						<p>Simple and lightweight.<small>(it is only 28kb of code)</small></p>
+						<p>Simple &amp; lightweight.<small>(it is only 28kb of code)</small></p>
 						<p>Mobile friendly.</p>
 						<p>Simple API.</p>
 						<p>Not many features included.</p>
@@ -231,7 +233,7 @@
 				</section>
 
 				<section>
-					<h3>User interface and layout: example</h3>
+					<h3>User interface &amp; layout: example</h3>
 					<p>Bootstrap framework (HTML, CSS, JS).</p>
 					<ul>
                                             <li><a>Responsive.</a></li>
@@ -422,10 +424,10 @@ function linkify( selector ) {
 					<ol>
 						<li>File-based data</li>
                                                     <ul>
-                                                    <li><a>Shapefile, KML, GeoJSON, & TopoJSON, gpx, csv</a></li></ul>
+                                                    <li><a>Shapefile, KML, GeoJSON, &amp; TopoJSON, gpx, csv</a></li></ul>
 						<li>Spatially-enabled database data</li>
                                                     <ul>
-                                                    <li><a>Proprietary: Microsoft SQL Server, Oracle Spatial, and the Esri ArcSDE middleware.</a></li></ul>
+                                                    <li><a>Proprietary: Microsoft SQL Server, Oracle Spatial, &amp; the Esri ArcSDE middleware.</a></li></ul>
                                                     <ul>
                                                     <li><a>Open equivalents: PostgreSQL with PostGIS extension,  SQLite with SpatiaLite extension.</a></li></ul>
 						<li>Raster formats</li>
@@ -528,7 +530,7 @@ function linkify( selector ) {
 
 					<section>
 						<h4>3. TopoJSON</h4>
-						<p><small>Encodes topology <strong> with Geometries that share sequences of positions called arcs</strong>.</p></small>
+						<p><small>Encodes topology <strong> with Geometries that share sequences of positions called arcs</strong>.</small></p>
 						<pre><code class="hljs" data-trim contenteditable>
 {
   "type": "Topology",
@@ -664,7 +666,7 @@ Reveal.addEventListener( 'customevent', function() {
                                             <li>Let’s try a simple web map</li>
                                             <li>The example is created with Leaflet</li>
                                             <li>...but the other techniques are very similar</li>
-                                        <ul>
+                                        </ul>
                                         <ol>
                                             <li>HTML page setup.</li>
                                             <li>Script.js file setup and data import.</li>
@@ -676,7 +678,7 @@ Reveal.addEventListener( 'customevent', function() {
 					<h4>1. HTML Setup</h4>
 					<a>Head section:</a>
                                         <ul>
-                                            <li>Import JavaScript files and online libraries.</li>
+                                            <li>Import JavaScript files &amp; online libraries.</li>
                                             <li>Import a CSS file.</li>
                                         </ul><br>
                                         <a>Body section:</a><br>
@@ -686,7 +688,7 @@ Reveal.addEventListener( 'customevent', function() {
                                         <pre><code class="hljs" data-trim contenteditable>
 <head>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-1.0.1/leaflet.css" />
-    <link rel="stylesheet” href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <script src="http://cdn.leafletjs.com/leaflet-1.0.1/leaflet.js"></script>
 </head>
 <body>
@@ -698,11 +700,11 @@ Reveal.addEventListener( 'customevent', function() {
 				</section>
 				
 				<section>
-					<h4>2. Script.js setup and Map initialization</h4>
+					<h4>2. Script.js setup &amp; Map initialization</h4>
                                         <ul>
-                                            <li>Initialize the map and set the center point</li>
+                                            <li>Initialize the map &amp; set the center point</li>
                                             <li>Add a base layer to the map</li>
-                                            <li>Import data and add it to the map</li>
+                                            <li>Import data &amp; add it to the map</li>
                                             <li>Add event handlers</li>
                                         </ul>
                                         <pre><code class="hljs" data-trim contenteditable>
@@ -717,8 +719,8 @@ maxZoom: 16
 				
 				<section>
 					<h4>2. Script.js setup: Background layer</h4>
-					<p>remove the 'center' and 'zoom' options from the L.map constructor</p>
-					<p>center and zoom level with the setView() method</p>
+					<p>remove the 'center' &amp; 'zoom' options from the L.map constructor</p>
+					<p>center &amp; zoom level with the setView() method</p>
                                         <pre><code class="hljs" data-trim contenteditable>
 var osm = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
 maxZoom: 18,
@@ -748,16 +750,18 @@ attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contri
 				
 				<section>
 					<h4>2. Script.js: Add a WMS Layer to the Map</h4>
-                                        <p>using L.tileLayer.wms() displays a WMS service as a tile layer on the map</p>
-                                        <pre><code class="hljs" data-trim contenteditable>
-var tileUrl = 'https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=<insert-your-apikey-here>',
+					<p>using L.tileLayer.wms() displays a WMS service as a tile layer on the map</p>
+                	<pre><code class="hljs" data-trim contenteditable>
+				
+var tileUrl = 'https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=[insert-your-apikey-here]';
 layer = new L.TileLayer(tileUrl, {maxZoom: 18});
-                                        </code></pre>
+
+                	</code></pre>
 				</section>
 				
 				<section>
 					<h4>3. Script.js: Add a Default Marker to the Map</h4>
-                                        <p>creates a marker variable and assigns it a marker object using L.marker()</p>
+                                        <p>creates a marker variable &amp; assigns it a marker object using L.marker()</p>
                                         <pre><code class="hljs" data-trim contenteditable>
 var marker = L.marker([-2.652, 36.8325]).addTo(map);
                                         </code></pre>
@@ -765,7 +769,7 @@ var marker = L.marker([-2.652, 36.8325]).addTo(map);
 				
 				<section>
 					<h4>3. Script.js: Add a Custom Marker to the Map</h4>
-                                        <p>creates the ‘MyIcon’ variable and assigns it an icon marker using L.icon()</p>
+                                        <p>creates the ‘MyIcon’ variable &amp; assigns it an icon marker using L.icon()</p>
                                         <p>A few options are passed to L.icon():</p>
                                         <ul>
                                             <li><a>iconUrl:</a> the url to an image to be used as icon marker</li>
@@ -858,7 +862,7 @@ color: #ffffff;
                                             <li>Equal  sign  after  a  variable <a> = </a> -­‐‐  assign  a  value  on  the  right  to  a  variable.</li>
                                             <li><a>Single  values</a>  -­‐‐  numbers  50.51,  <a>string</a>  -­‐‐  ‘text’  </li>
                                             <li>Grouped  values:  arrays <a> [1,2,3],</a>  objects/dictionaries  <a>{x:1,y:2} </a> </li>
-                                        <ul>
+                                        </ul>
 				</section>
 				
 				<section>
@@ -872,14 +876,15 @@ color: #ffffff;
                                                 value.. </a> </li>
                                             <li><small>It  often  requires  a  value  or  values  to  work .</small></li>
                                             <li>Every <strong> task/action</strong>  in  Leaflet  has  a <italic> method</italic>.</li>
-                                        <ul>
+                                        </ul>
 				</section>
 				
 				<section style="text-align: left;">
 					<h4>That’s  it! </h4>
 					
                                         <p>Any queries during the practicals can be sent to:</p>
-                                            <p><a><italic>jmwaura@jkuat.ac.ke </italic></a><br></p>
+                                            <p><a><italic>jmwaura@jkuat.ac.ke </italic></a></p>
+					<br>
                                         <p>I'll try to answer as fast as possible.</p>
                                         
 					<small><q>Courtesy of <strong>reveal.js</strong></q></small>
