@@ -1067,7 +1067,8 @@ body {
 
 .reveal.rtl pre,
 .reveal.rtl code {
-  direction: ltr; }
+  direction: ltr;
+   }
 
 .reveal.rtl ol,
 .reveal.rtl ul {

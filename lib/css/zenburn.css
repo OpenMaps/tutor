@@ -9,9 +9,16 @@ based on dark.css by Ivan Sagalaev
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  /*background: #f0f0f0;*/
-  background: #3f3f3f;
-  color: #dcdcdc;
+  /*background: #303030;
+  color: #f1f1f1;*/
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	
+	font-size: 12px;
+	line-height: 20px;
+	background: #efefef;
+	border: 1px solid #777;
+	color: #333;
+	font-weight: bold;
 }
 
 .hljs-keyword,
@@ -79,3 +86,5 @@ based on dark.css by Ivan Sagalaev
 .hljs-strong {
   font-weight: bold;
 }
+
+
