@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>D3 map</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-    <script src="d/ke-counties.js"></script>
+    <script src="d/k-counties.js"></script>
     
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
  
@@ -66,7 +66,7 @@
      //create svg path generator using the projection
     var geoPath = d3.geo.path()
         .projection(projection);
-        
+  
     //retrieve data in csv data file for choropleth
     svg.append("g")
         .selectAll("path")
@@ -76,13 +76,26 @@
         .attr( "d", geoPath )
         .attr("class","county")
         .on("mouseover", function(d){
-            d3.select("h2").text(d.properties.Ccodes+" : "+ d.properties.Name);
+			d3.select("h1").text(d.properties.id);
+            d3.select("h2").text(d.properties.ccodes+" : "+ d.properties.Name);
             d3.select(this).attr("class","county hover");
         })
         .on("mouseout", function(d){
+			d3.select("h1").text("");
             d3.select("h2").text("");
             d3.select(this).attr("class","county");
         });
+      //Reading csv file
+      d3.csv("d/election.csv", function(d) {
+		  return {
+			id: d.id,
+			codes : d.codes,
+			counties : +d.Counties,
+			votes : +d.Margin
+		  };
+		}, function(data) {
+		  console.log(data);
+		});
  
   </script>
 </body>
