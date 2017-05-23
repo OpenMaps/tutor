@@ -74,7 +74,7 @@
     //create Kenya mercator projection, centered on Nairobi
 	var projection = d3.geo.mercator()
 		.center([39.03111,0.25141])
-		.scale([4000])
+		.scale([3500])
 		.translate([width/2, height/2]);
         
      //create svg path generator using the projection
@@ -92,7 +92,7 @@
         .style("stroke", "white")
         .attr("class","county")
         .on("mouseover", function(d){
-			d3.select("h1").text(d.properties.id);
+			d3.select("h1").text(d.properties.ccodes);
             d3.select("h2").text(d.properties.Name);
             d3.select(this).attr("class","county hover");
         })
@@ -122,7 +122,7 @@
         })
         .style('text-anchor', 'middle')
         .text(function(d) {
-            return d.properties.ccodes
+            return d.properties.id
         });
     labels.selectAll('.label').data(counties.features).enter().append('text')
         .attr("class", "label")
@@ -131,7 +131,7 @@
         })
         .style('text-anchor', 'middle')
         .text(function(d) {
-            return d.properties.ccodes
+            return d.properties.id
         });
 		
   </script>
