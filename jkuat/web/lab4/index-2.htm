@@ -83,7 +83,7 @@
     var color = d3.scale.linear()
 					.range(["#FFA500"]);
 	//csv
-	d3.csv("d/election.csv", function(data) {
+	d3.csv("d/election-2012.csv", function(data) {
 		//color domains
 		color.domain([
 				d3.min(data, function(d) { return d.Margin; }),

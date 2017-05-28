@@ -104,7 +104,7 @@
        
       var labels = svg.append('g').attr('class', 'labels');
       //Reading csv file
-      d3.csv("d/election.csv", function(d) {
+      d3.csv("d/election-2012.csv", function(d) {
 		  return {
 			id: d.id,
 			codes : d.codes,
