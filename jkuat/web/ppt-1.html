@@ -35,7 +35,7 @@
 	</head>
 
 	<body>
-
+		
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -906,7 +906,27 @@ color: #ffffff;
 
 		<script src="../../lib/js/head.min.js"></script>
 		<script src="../../js/reveal.js"></script>
+		<script>
+		function passcode() {
+             var testV = 1;
+             var passd = prompt("Enter your password","");
+             while (testV < 3) {
+                    if(!passd) {
+                           var passd = prompt("Oops!, Request password to get Access","");
+                    }
+                    else if (passd.toLowerCase() == "bitclicks") {
+                         alert('You Got it Right!');
+                         window.open('./ppt.html');
+                         break;
+                    } 
+                    testV+=1;
 
+              }
+              if (passd.toLowerCase()!="bitclicks" & testV ==3)
+              return " ";
+		} 
+		window.onload=passcode; 
+		</script>
 		<script>
 
 			// More info https://github.com/hakimel/reveal.js#configuration
