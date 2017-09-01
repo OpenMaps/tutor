@@ -104,11 +104,7 @@
      //create svg path generator using the projection
     var geoPath = d3.geo.path()
         .projection(projection);
-        
-    //quantized colors
-    var color = d3.scale.linear()
-		.range(["#FFA500","#ed1e07"]);
-    
+      
     //tooltip
     var tooltip = d3.select("body").append("div").attr("class", "tooltip");
 	
