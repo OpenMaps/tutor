@@ -114,12 +114,6 @@
 	
     //csv
 	d3.csv("d/iebc-2017.csv", function(data) {
-		//color domains
-		color.domain([
-				d3.min(data, function(d) { return d.margin2017; }),
-				d3.max(data, function(d) { return d.margin2017; })
-				]);
-				
 	//load json
 	d3.json("d/k-counties.json", function(json) {
 		
@@ -160,7 +154,7 @@
 				//Get data value
 				var mar = d.properties.margin;
 				if (mar < 0) {
-					return color(mar);
+					return "#FFA500";
 				} else {
 					return "#ed1e07";
 				}
