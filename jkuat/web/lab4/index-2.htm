@@ -105,21 +105,11 @@
     var geoPath = d3.geo.path()
         .projection(projection);
         
-    //quantized colors
-    var color = d3.scale.linear()
-		.range(["#FFA500","#ed1e07"]);
-    
     //tooltip
     var tooltip = d3.select("body").append("div").attr("class", "tooltip");
 	
     //csv
-	d3.csv("d/election-2012.csv", function(data) {
-		//color domains
-		color.domain([
-				d3.min(data, function(d) { return d.Margin; }),
-				d3.max(data, function(d) { return d.Margin; })
-				]);
-				
+	d3.csv("d/election-2012.csv", function(data) {		
 	//load json
 	d3.json("d/k-counties.json", function(json) {
 		
@@ -160,7 +150,7 @@
 				//Get data value
 				var mar = d.properties.margin;
 				if (mar < 0) {
-					return color(mar);
+					return "#FFA500";
 				} else {
 					return "#ed1e07";
 				}

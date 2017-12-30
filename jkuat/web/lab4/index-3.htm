@@ -104,16 +104,13 @@
      //create svg path generator using the projection
     var geoPath = d3.geo.path()
         .projection(projection);
-        
-    //quantized colors
-    var color = d3.scale.linear()
-		.range(["#FFA500","#ed1e07"]);
-    
+      
     //tooltip
     var tooltip = d3.select("body").append("div").attr("class", "tooltip");
 	
     //csv
 	d3.csv("d/iebc-2017.csv", function(data) {
+<<<<<<< HEAD
 		/*color domains
 		color.domain([
 				d3.min(data, function(d) { return d.margin2017; }),
@@ -121,6 +118,9 @@
 				]);
 				
 	//load json*/
+=======
+	//load json
+>>>>>>> 24e276116bf95eb240dababc036307099ea82e44
 	d3.json("d/k-counties.json", function(json) {
 		
 		//Merge the election data and GeoJSON
