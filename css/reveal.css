@@ -39,7 +39,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow-y: auto; }
 
 body {
   position: relative;
@@ -1067,8 +1067,7 @@ body {
 
 .reveal.rtl pre,
 .reveal.rtl code {
-  direction: ltr;
-   }
+  direction: ltr; }
 
 .reveal.rtl ol,
 .reveal.rtl ul {
@@ -1366,7 +1365,7 @@ body {
   visibility: hidden; }
 .layouts {
    float: left;
-   margin: 20px;
+   margin: 30px;
    padding: 20px;
    min-width: 200px;
    max-width: 300px;/*
